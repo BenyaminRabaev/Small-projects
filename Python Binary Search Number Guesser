@@ -1,0 +1,25 @@
+print('the of a number between 1 and 100')
+Answered = False
+x = 100
+pointer1 = 0
+pointer2 = 100
+number = input("what is your number")
+while Answered == False:
+
+  x = (pointer1 + pointer2) // 2
+  if str(x) == number:
+    print("Im better than hal9000!")
+    break
+  print("is your number "+str(x))
+  question = input("If not, is it above or below "+ str(x))
+  print('Type \"above\" or \"below\"')
+  if question == 'Yeet':
+    print("I hate you")
+    break
+
+  if question == 'above':
+    
+    pointer1 = x 
+    
+  if question == 'below':
+    pointer2 = x
